@@ -40,3 +40,36 @@ what is DEVOPS?
            .continuous MONITORING - operate,monitor
            .continuous feedback -  after the released product or software its review from cilent.
            .continuous operations - practice on the applications and infrasturcture.
+
+
+           
+           
+           CONCEPTS OF VERSION control
+           . INTRODUCTION OF VERSION control
+           . BASICS CONCEPTS IN VERSION control
+           . WHAT IS VERSION control
+           . WORKFLOW IN VERSION control
+           . ADVANTAGES OF VERSION control
+           . TYPES OF VERSION control
+           . BEST PRACTICES IN VERSION CONTROL
+
+
+           --> INTRODUCTION OF VERSION CONTROL
+           . Version control is a fundamental component of DevOps. It allows teams 
+           to manage changes to code, configuration, and documentation efficiently 
+           and collaboratively
+
+           --> BASICS CONCEPTS IN VERSION CONTROL
+           . repository: it is a storage space for your project and it contains
+           including history of all changes.they have 2 types in repository
+             --> local repository:Stored on your machine.
+             --> remote repository:Stored on a server (e.g., GitHub, GitLab).
+            
+            . commit:A commit is a snapshot of your files at a specific time. 
+            It represents a set of changes saved to the repository.
+
+            .Branch: A branch is a separate line of development, 
+            allowing you to work on features or fixes independently.
+
+            .Clone:Cloning is copying a remote repository to your local machine.
+            
