@@ -1,0 +1,21 @@
+WHAT IS VERSION CONTROL?
+            ans) A version control System records all the changes made to file or set of files so A
+            specific version may be called later if needed.
+
+repository: types of workflows
+           --> workflow1: 1.commit, 2.update
+           --> workflow2: 1.commit, 2.update
+           -->workflow3: 1.commit, 2.update
+
+Advantages of version control:
+--> helps in managing and protecting source code.
+--> keep track of all modification made to code.
+--> comparing eariler versions of code.
+--> Backup and disaster Recovery.
+
+
+Types of version control
+.Local Version Control System (lvcs): The version is stored on local repository.
+.Centralized Version Control System (cvcs): The version is stored on central server.
+.Distributive version Control System (Dvcs): The version is developer has a full copy of the repository including full history.
+            
