@@ -1,0 +1,6 @@
+What is Continous integration and continous deployment?
+ans) CI: continous integration is the practice of frequently merging code changing into a
+central repository and automatically testing them.
+
+CD: continous deployment is the automated delivery to production 
+   .no manual approval
