@@ -4,3 +4,18 @@ central repository and automatically testing them.
 
 CD: continous deployment is the automated delivery to production 
    .no manual approval
+
+   Short note:
+   CI: Keep integrating code and testing it automatically.
+   CD: Keep deploying that tested code to production quickly and safely.
+
+   Tools For CI/CD in DEVOPS:
+   . CI: jenkins, Travis CI, CircleCI, GitHub Actions, GitLab CI.
+   . CD: ArgoCD, Spinnaker, Tekton, AWS CodeDeploy, Azure Devops, Kubernetes.
+
+   CI/CD Pipeline Flow:
+   .code commit --> Developer pushes codes.
+   .Build --> code is compiled/build.
+   .Test --> Automated unit, integration, Security tests run.
+   .Deploy --> code goes to staging (CD) and then production(manual/auto).
+   .Monitor --> Application monitored for errors and performance.
