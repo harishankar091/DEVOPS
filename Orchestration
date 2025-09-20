@@ -1,0 +1,21 @@
+Concept of ORCHESTRATION
+
+What is the orchestration?
+ans) In simple terms, orchestration is the automation of process across 
+muitiple systems to ensure that the right tasks happen in the right order
+with minimum manual intervention.
+
+Key goals of orchestration
+. Automation of workflows (eg: CI/CD pipelines)
+. Environment provisioning (eg: spin up serevrs or containers)
+. Configuration management
+. Service Deployment
+. Resource management across cloud, on-prem, or hybrid infrastructures
+. Monitoring and alerting.
+
+Benefits of Orchestration in Devops
+--> Faster and reliable deployments.
+--> Reduced manual errors.
+--> Scalability of infrastucture and services.
+--> Improved visibility and monitoring.
+--> Consistency across environment.
