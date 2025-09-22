@@ -1,0 +1,78 @@
+IAC means infrastructure as code 
+
+What is infrastructure as code?
+ans)infrastructure as code (iac) in devops is the practice of managing and provisioning computing
+infrastructure (servers, network,databases....etc) through machine-readable configuration files instead
+of manual hardware setup or interactive configuration tools.
+
+Key points of Iac:
+--> Automation - infrastructure is created and managed automatically using scripts/config files.
+--> Version control - Iac files are stored in git or other version control systems, enabling collaboration and rollback.
+--> Consistency - Prevents human errors and configuration drift across environments (Dev, QA, Prod).
+--> Scalability - Makes it easy to spin up or tear down environments quickly.
+--> Documentation - The code itself becomes documentation for infrastructure.
+
+Common Iac Tools:
+--> Terraform (most popular, cloud-agnostic, declarative approach)
+--> AWS CloudFormation (for AWS resources)
+--> Azure Resource Manager (ARM) templates
+--> Google Cloud Deployment Manager
+--> Ansible, Puppet, Chef (configuration management + Iac)
+--> Pulumi (Iac using real programming languages)
+
+How Iac fits into Devops:
+1.CI/CD Pipelines
+--> . Iac automates provisioning of test environment during Continuous Integration.
+--> . Ensures production-like environments for testing.
+
+2.Infrastucture Provisioning
+--> . Instead of manually setting up servers, Iac scripts define them once and deploy many times.
+
+3.Immutable Infrastructure
+--> . Old resources are destroyed and replaced with new ones when updating configurations(ensures stability).
+
+Real world Iac in CI/CD WorkFlow
+1.Developer Commits code
+--> A developer pushes application code and Iac config files (e.g Terraform, Ansible or CloudFormation)
+into a git repository.
+Example: app-code/ for application + infra-code/ for infrastructure.
+
+2.CI/CD Pipelines Triggers
+--> A pipelines in jenkins, Github Actions, Github CI or Azure Devops is Triggered.
+   . The pipeline has two main jobs:
+      1.Provision Infrastructure (Iac step)
+      2.Deploy Application.
+
+3.Infrastructure Provisioning with Iac
+--> . Iac tool runs automatically (e.g Terraform or Ansible)
+    . It provisions:
+       --> virtual Machines/ Containers.
+       --> Networking (VPC, subnets, security groups, load balancers).
+       --> Databases (RDS, MySQL, MONGODB,....etc)
+    . ALL created consistently across Dev, QA, Staging, and Prod.
+    Example: Terraform Script creates an AWS EC2 + RDS instance.
+
+4.Application Deployment
+. Once infra is ready, pipeline deploys the application (Using Docker, Kubernets, or directly onto VMs).
+. Configuration management tools like Ansible, Chef,Puppet can also install dependencies.
+
+5.Testing
+-->Automated tests run in the newly provisioned environment
+    .Unit Tests (check code logic)
+    .Integration Tests (check infra + app)
+    .Smoke Tests (check app runs on infra)
+
+6.Approval&Promotion
+--> If tests pass, pipeline can:
+     . Auto-promote changes to staging/production or
+     . Wait for manual approval.
+
+
+Example CI/CD + Iac Flow (Simplified):
+1.Developer pushes --> git push.
+2.CI/CD pipeline starts.
+3.Iac tool provisions infra (terraform apply).
+4.Application deployed (e.g Docker/Kubernetes).
+5.Tests run (unit,integration, smoke).
+6.Approval --> Deploy to prod.
+7.Monitor & Rollback if needed.
