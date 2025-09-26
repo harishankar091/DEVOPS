@@ -1,0 +1,70 @@
+                                MONITORING:
+------------------------------------------------------------------------------------------
+What is the MONITORING?
+ans)monitoring is the continous collection and analysis of data from applications, servers, databases,
+and infrastructure to understand system health, performance, and availability.
+
+Types of monitoring
+1.infrastructure Monitoring: CPU, memory, disk, network usage.
+2.Application Performance Monitoring(APM): Response times, error rates, API performance.
+3.Log Monitoring: Collection logs in real time to detect errors and unusual behavior.
+4.User Experience Monitoring:Synthetic monitoring, real-user monitoring(RUM).
+5.Sercurity Monitoring:Intrusion detection,anomaly detection.
+
+Key Benefits:
+. Detect issues before customers notice.
+. Improve system reliability and uptime.
+. Provide data for scaling decisions.
+. Enable proactive incident response.
+
+Key Aspects of Monitoring:
+--> System Monitoring: Observing server performance, CPU usage, memory usage, disk space, network latency.....etc.
+--> Application Monitoring: Monitoring application performance, response times, error rates, and throughput.
+--> Infrastructure Monitoring: Monitoring cloud or on-prem infrastructure, such as virtual machines, containers, and network configurations.
+--> Real-Time Alerts: Automated  notifications when something abnormal happens. These alerts can be 
+based on thresholds or abnormal patterns.
+--> Metrics Collection: Gathering numerical data such as error rates, response times, request counts, etc.
+which helps in understanding the system's health and performance trends over time.
+
+Popular Monitoring Tools:
+1.Promrtheus + Grafana
+2.Datadog
+3.New Relic
+4.Zabbix
+5.Nagios
+6.AppDynamics
+7.Splunk Observability
+
+
+
+                                    LOGGING
+-------------------------------------------------------------------------------------------------------
+What is Logging?
+ans) Logging involves capturing detailed information about system behavior, errors, events, and transactions in real-time. logs provide a trail of what happening inside the system, and they are invaluable when troubleshooting issues.
+
+Key Aspects of Logging:
+--> Centralized Logging: All logs from different services and environments are collected and stored in a
+central location for easy analysis and quering.
+--> Structured logging: Logs should be structured in a consistent format (JSON, key-value pairs) to make 
+it easier to process and analyze them.
+Log levels: Different levels of logging (DEBUG, INFO, WARN, ERROR) help filter logs based on their 
+importance.
+--> Log Rotation and Retention: Implementing log rotation to manage disk space and setting retention.
+--> Log Analytics: Using tools to analyze logs for patterns, trends, and anomalies. 
+--> Corelation with Monitoring: Logs should be corelated with monitoring data to provide context during 
+incident investigations.
+
+Key Benefits of logging:
+. Troubleshooting failures quickly.
+. Track security incidents.
+.understand user behavior.
+. Audit system changes.
+. Compliance with regulatory requirements.
+
+popular logging tools:
+1.ELK Stack(Elasticsearch, logstash, Kibana)
+2.Graylog
+3.Fluentd/Fluentbit
+4.Splunk
+5.Datadog
+6.Promtail + Loki + Grafana
