@@ -1,0 +1,63 @@
+In Devops, tools are essential to automate, monitor, and Streamline the software development and operations lifecycle. These tools are usually grouped into categories based on different stages of the Devops pipeline:
+
+Major Categories of Devops Tools:
+
+
+1.Version control (Source Code Management)
+--> Used to manage code changes 
+  . Git (most Popular)
+  . GitHub
+  . GitLab
+  . Bitbucket
+
+2.Continuous Integration / Continuous Delivery (CI/CD)
+-->Helps automate server setup, configuration, and management them in scalable environments.
+   . Docker (containerization)
+   . Podman
+   . Kubernetes (K8s) (Orchestration)
+   . OpenShift
+   . Docker Swarm
+
+3.Configuration Management
+--> Helps automate server setup, configuration, and management.
+   . Ansible 
+   . Puppet
+   . Chef
+   . SaltStack
+
+4.Containerization & Orchestration
+--> Packages applications with dependencies and manages them in scalable environments.
+   . Docker (containerization)
+   . Podman
+   . Kubernetes (K8s) (Orchestration)
+   . OpenShift
+   . Docker Swarm
+
+5. Infrastructure as Code (Iac)
+--> Defines and manages infrastructure through code.
+   . Terraform
+   . AWS CloudFormation
+   . Pulumi
+
+6. Monitoring & Logging
+--> Provides visibility into application and infrastructure performance.
+   . Prometheus (meterics monitoring)
+   . Grafana (visualization)
+   . ELK Stack (Elasticsearch, Logstash, Kibana)
+   . Splunk
+   . Nagios
+   . Datadog
+
+7. Collaboration & Communication
+--> Enhances teamwork in devops workflow
+   . Slack
+   . Microsoft Teams
+   . Jira (issue/Project/tracking)
+   . Confluence
+
+8. Cloud Providers
+--> Offer scalable infrastructure and Devops services.
+    . AWS 
+    . Microsoft Azure
+    . Google Cloud Platform (GCP)
+    . IBM Cloud
