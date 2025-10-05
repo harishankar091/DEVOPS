@@ -1,0 +1,7 @@
+
+Flowchart of DevopslifeCycle
+
+   PLAN -> CODE -> BUILD -> TEST -> RELEASE -> DEPLOY -> OPERATE -> MONITOR
+                     ^                                               ^
+                     | --------------------------------------------- |
+                              Continuous Feedback Loop
