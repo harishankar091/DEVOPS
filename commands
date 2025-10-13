@@ -1,0 +1,110 @@
+Tool:Git
+common commands
+-> Git init
+-> Git status
+-> Git add
+-> Git commit -m "Initial commit"
+-> Git push origin main
+-> Git pull origin main
+-> Git log --oneline
+
+1.Linux Basics (used Everywhere in Devops)
+
+--> File Navigation: ls,cd,pwd 
+    List files, change directory, print working directory
+
+--> File operations: cp,mv,rm,cat,touch,mkdir
+    copy,move,remove,view,create files/directions.
+
+--> Permissions: chmod,chown,sudo
+    change permissions,ownership, run as superuser.
+
+--> process Mgmt: ps,top,kill,htop
+    view and manage process.
+
+--> Networking: ping,ifconfig, netstat, curl,wget
+    Network connectivity and information 
+
+--> Package Mgmt: apt, yum, dnf
+    install and manage software packages
+
+--> logs: tail -f/var/log/syslog 
+    view live log updates 
+
+2.Git(version control)
+--> git init:Initialize a Git repository
+--> git clone: clone a remote repo
+--> git status: show modified files
+--> git add: Stage all changes
+--> git commit: commit staged changes
+--> git push origin main: Push changes to remote
+--> git pull: Fetch and merge changes
+--> git branch / git checkout -b: create/switch branches
+--> git merge: Merge a branch
+--> git log: Show commit history
+
+3.Jenkins(CI/CD)
+--> sudo systemct1 start jenkins: Start jenkins
+--> sudo systemct1 status jenkins: Check status
+--> sudo cat
+/var/lib/jenkins/secrets/initialAdminPassword : Get Admin Password
+--> jenkinsfile: used to define pipeline stages (stages {build, test, deploy})
+--> jenkins-cli,jar -s http://localhost:8080/ list-jobs: List jobs using jenkins CLI
+
+4.Docker(containerization)
+--> docker --version: check Docker version
+--> docker pull: Download an image
+--> docker images: List Images
+--> docker run -d -p 8080:80: Run a container
+--> docker ps: Show running containers
+--> docker exec -it <container> bash: Access container shell
+--> docker stop <container>:stop a container
+--> docker rm <container>: remove container
+--> docker build -t <name>: Build image from Dockerfile
+--> docker-compose up -d: Run services from docker-compose.yml
+
+
+5.Kubernetes (Orchestration)
+--> kubect1 version: check Kubernetes version
+--> kubect1 get nodes: List cluster nodes
+--> kubect1 get pods: List running pods
+--> kubect1 get services: List services
+--> kubect1 apply -f<file>.yaml: Apply configuration file
+--> kubect1 delete pod <name>:Delete pod
+--> kubect1 logs<pod>:views pod logs
+--> kubect1 exec -it <pod> --bash: Access pod shell
+--> kubect1 describe pod <pod>: Detailed pod info
+--> kubect1 scale deployment <name> --replicas=3: Scale replicas
+
+6.Ansible(configuration Management)
+--> ansible --version: Check version
+--> ansible all -m ping: Ping all hosts
+--> ansible-playbook playbook.yml: Run a playbook
+--> ansible-inventory --list -y: Show inventory
+--> ansible localhost -m debug -a "msg='Hello'": Test module
+
+7.Terraform(infrastructure as code)
+--> terraform init: initialize working directory
+--> terraform plan: Preview changes
+--> terraform apply: Create infrastructure
+--> terraform destory: Delete infrastructure
+--> terraform fmt: Format code
+--> terraform validate: Validate configuration
+
+
+8.Monitoring(Prometheus & Grafana)
+--> Prometheus: Access via browser at http://localhost:9090
+--> Grafana: Start server with systemct1 start grafana-server
+-->Dashboards: Create metrics visualizations(CPU, memory, network..etc)
+
+9.Cloud (AWS CLI)
+--> aws configure: Set up credentials
+--> aws s3 ls: List S3 buckets
+--> aws ec2 describe-instances: Show EC2 instances
+--> aws s3 cp file.txt s3://bucket/: Upload file
+--> aws cloudformation deploy --template-file: Deploy stack
+
+10.CI/CD Common Commands
+--> Build: mvn clean install / npm build / gradle build
+--> Test: pytest, mvn test, npm test
+--> Deploy: kubect1 apply -f deployment.yaml / ansible-playbook deploy.yml
