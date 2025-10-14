@@ -108,3 +108,5 @@ common commands
 --> Build: mvn clean install / npm build / gradle build
 --> Test: pytest, mvn test, npm test
 --> Deploy: kubect1 apply -f deployment.yaml / ansible-playbook deploy.yml
+--> Monitor: kubect1 get pods , kubect1 logs <pod>
+

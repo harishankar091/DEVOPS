@@ -1,0 +1,6 @@
+Bonus------ Common Devops Commands Patterns
+--> Start a service: systemct1 start <service>
+--> Stop a service: systemct1 stop <service>
+--> Restart a service: systemct1 restart <service>
+--> Check status: systemct1 status <service>
+--> Enable service on boot: systemct1 enable <service>
